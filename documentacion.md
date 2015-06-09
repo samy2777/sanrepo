@@ -154,6 +154,16 @@ address 192.168.10.41
 netmask 255.255.255.0
 gateway 192.168.10.1
 nameservers 200.87.100.10, 200.87.100.40
+
+```
+*nota importante
+*tambien edita el dns
+```
+nano /etc/resolv.conf   
+comentar todo y solo debe quedar
+nameserver 200.87.100.10
+nameserver 200.87.100.40
+
 ```
 ###Configuración del sources.list
 * Esta configuración es importante para continuar con la instalación de paquetes dentro de Debian (linux)
