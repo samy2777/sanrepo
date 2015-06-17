@@ -345,5 +345,23 @@ Fdisk –l /dev/sda  (aquí nos muestra que la partición de este disco a sido r
 ```
 *Reiniciar la maquina virtual
    ```
-        Reboot
-        ```
+        Rebot
+
+```
+### crear carpetas con privilegios
+* instrucción para la creación de una carpeta denominada reporteanalyzer con privilegios de lectura y escritura
+```
+mkdir /var/www/html/reporteanalyzer
+chown -R www-data /var/www/html/reporteanalyzer
+chown -R 775 /var/www/html/reporteanalyzer
+```   
+### Herramientas para generar reportes con squid
+*sarg
+*analyzer
+*calamaris
+
+*hacemos los cambios requeridos en cada uno de ellos y al final correr la siguiente
+instrucción para correr los cambios realizados
+```
+sarg -x
+```
